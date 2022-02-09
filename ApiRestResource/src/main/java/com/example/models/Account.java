@@ -1,8 +1,11 @@
 package com.example.models;
+import lombok.Data;
+
 import javax.persistence.*;
 import java.util.Date;
 @Entity
 @Table (name = "Account")
+@Data
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
